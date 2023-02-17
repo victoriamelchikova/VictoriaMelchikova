@@ -15,7 +15,8 @@ div.MenuLevel1{
     grid-template-rows: 30px;
 }
 div.MenuLevel1>div{
-    background-color: gray;
+    color: grey;
+    background-color: rgb(189, 189, 189);
     border: solid black 1px;
     position: relative;
     cursor: pointer;
@@ -29,9 +30,11 @@ div.MenuLevel2 {
 }
 
 div.MenuLevel2 > div { 
-    background-color: grey; 
+    color: grey;
+    background-color: rgb(189, 189, 189) ; 
     border: solid black 1px; 
     cursor: pointer; 
+    border-radius: 5px;
     
 }
 
@@ -39,7 +42,7 @@ div.MenuLevel1 > div:hover div.MenuLevel2 {
     display: block; 
     position: absolute; 
     bottom:50% ; top: 90%; 
-    z-index: 1; 
+    z-index: 1;
     
 }
 
@@ -51,13 +54,11 @@ div.MenuLevel1 > div:hover div.MenuLevel2 {
 }
 
 div.MenuLevel1 > div:hover div.MenuLevel2 { 
-    display: block; position: absolute; top: 1%; left: 100%; z-index: 1; 
+    display: block; position: absolute; top: 1%; left: 100%; z-index: 1; border-radius: 5px;
 }
-
 
 }
     
-
 </style>
     
     <div class='MenuLevel1'>
@@ -66,7 +67,7 @@ div.MenuLevel1 > div:hover div.MenuLevel2 {
     <div>
      
         
-     <div>Среда</div>
+     <div class="среда1">Среда</div>
             <div class='MenuLevel2'>
                 <div>Завтрак</div>
                 <div>Обед</div>

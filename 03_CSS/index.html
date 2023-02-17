@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+div.MenuLevel1{
+    display: grid;
+    grid-template-columns: 95px 95px 95px 95px 95px 95px;
+    grid-template-rows: 30px;
+}
+div.MenuLevel1>div{
+    background-color: gray;
+    border: solid black 1px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+div.MenuLevel2 { 
+    width: 95px; 
+    display: none
+   
+}
+
+div.MenuLevel2 > div { 
+    background-color: grey; 
+    border: solid black 1px; 
+    cursor: pointer; 
+    
+}
+
+div.MenuLevel1 > div:hover div.MenuLevel2 { 
+    display: block; 
+    position: absolute; 
+    bottom:50% ; top: 90%; 
+    z-index: 1; 
+    
+}
+
+@media all and (max-width: 580px) {
+    div.MenuLevel1{
+    display: grid;
+    grid-template-columns: 95px ;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px; 
+}
+
+div.MenuLevel1 > div:hover div.MenuLevel2 { 
+    display: block; position: absolute; top: 1%; left: 100%; z-index: 1; 
+}
+
+
+}
+    
+
+</style>
+    
+    <div class='MenuLevel1'>
+        <div>Понедельник</div>
+        <div>Вторник</div>
+    <div>
+     
+        
+     <div>Среда</div>
+            <div class='MenuLevel2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+
+        </div>
+        <div>Четверг</div>
+        <div>Пятница</div>
+        <div>Суббота</div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+
+    
+</head>
+<body>
+     
+    <div class="container"><h1>HOW-TO: Программа на Python, Часть 1</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="item"> 
+                    <ul>
+                    <li> <a href="index.html">Программа на Python — часть 1</a> </li>
+                    <li> <a href="index2.html">Программа на Python — часть 2</a> </li>
+                    <li> <a href="index3.html">Программа на Python — часть 3</a> </li>
+                    </ul>
+
+                    <h2 id="Ксодержанию">Содержание</h2>
+                    <ul>
+                        <li> <a href="#Наша первая программа">Наша первая программа</a> </li> 
+                        <li> <a href="#Пример цикла For">Пример цикла For</a> </li> 
+                    </ul>
+                    <h2 id="Наша первая программа">Наша первая программа</h2>
+
+                    <a href="#Ксодержанию"> К содержанию</a>
+                    <h2 id="Пример цикла For">Пример цикла For</h2>
+
+                    <a href="#Ксодержанию"> К содержанию</a>
+
+            </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="item"><h1>HOW-TO: Программа на Python, Часть 1</h1></div>
+                <p> Из множества существующих языков программирования Python — один из самых лёгких
+                    в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+                    Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+                    обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+                    создание консольных приложений, а в следующей — программирование графических
+                    интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо сейчас.</p> 
+                    <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong> ). Потом мы разберёмся, что делает
+                        каждая строка и пойдём дальше.</p>
+                        <p>Введите эти 4 строки:</p>
+
+<code>      #!/usr/bin/env python 
+       <br> print 'Hello. I am a python program.'
+       <br> name = raw_input("What is your name?")
+       <br> print "Hello there, " + name + "!" 
+</code>
+
+<p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+   <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+   программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+   этого введите в терминале</p>
+
+<b><u>chmod +x hello.py</u></b>
+      
+<p>в папке, в которой вы сохранили программу. Теперь запустите её</p>
+
+<pre>
+<code> 
+  greg@earth:~/python_examples$ ./hello.py
+  Hello. I am a python program.
+  What is your name? Ferd Burphel
+  Hello there, Ferd Burphel!
+  greg@earth:~/python_examples$
+</code>
+</pre>           
+
+<p>Вот и всё.</p>
+<p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и наберите следующую программу:</p>
+
+<pre>
+<code>  
+#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr 
+</code> 
+</pre>      
+
+<p><em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+       Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+       как в других языках программирования, а отступы.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

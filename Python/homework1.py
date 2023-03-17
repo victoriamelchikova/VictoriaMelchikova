@@ -14,17 +14,10 @@ import random
 print(random.randint(0,100))
 
 
-def convert():
-    km = 50
-    metres = 1000
-    metres *= km
-    print(metres)
 
 
-ex_rate = decimal.Decimal('2.83')
-am_usd = int(input("Сумма в долларах США: "))
-am_byn = ex_rate*am_usd
-print(am_usd, "$ ==>", am_byn, "руб.")
+
+
     
 
 
